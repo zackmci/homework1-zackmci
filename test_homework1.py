@@ -41,12 +41,14 @@ class TestExercise1(unittest.TestCase):
     def test_collatz_step(self):
         # you should probably write some tests to determine if collatz_step is
         # being correctly computed
-        raise NotImplementedError() # delete this line before writing tests
+        m = collatz_step(5)
+        self.assertEqual(m, 16)
 
     def test_collatz_step_one(self):
         # you should probably write a test to see if collatz_step handles the
         # n=1 case correctly
-        raise NotImplementedError() # delete this line before writing tests
+        m = collatz_step(1)
+        self.assertEqual(m, 1)
 
     def test_collatz_step_error(self):
         # this test has been written for you. it demonstrates how to test if a
@@ -58,7 +60,8 @@ class TestExercise1(unittest.TestCase):
     def test_collatz(self):
         # you should probably test the collatz() function against some collatz
         # sequences that you've computed by hand
-        raise NotImplementedError() # delete this line before writing tests
+        m = collatz(10)
+        self.assertEqual(m, [10, 5, 16, 8, 4, 2, 1])
 
 
 class TestExercise2(unittest.TestCase):
